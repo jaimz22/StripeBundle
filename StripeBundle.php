@@ -13,7 +13,7 @@
 
 namespace PaymentSuite\StripeBundle;
 
-use Elcodi\Bundle\CoreBundle\Interfaces\DependentBundleInterface;
+use Mmoreram\SymfonyBundleDependencies\DependentBundleInterface;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\HttpKernel\KernelInterface;
