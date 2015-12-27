@@ -43,6 +43,7 @@ class StripeExtension extends AbstractPaymentSuiteExtension
                 'api_endpoint' => $config['api_endpoint'],
                 'view_template' => $config['templates']['view_template'],
                 'scripts_template' => $config['templates']['scripts_template'],
+                'controller_route' => $config['controller_route']
             ]
         );
 
