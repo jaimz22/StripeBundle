@@ -29,3 +29,12 @@ services:
             - "%paymentsuite.stripe.public_key%"
             - "%paymentsuite.stripe.view_template%"
             - "%paymentsuite.stripe.scripts_template%"
+
+    payment_suite_stripe.router.stripe_routes_loader:
+        class: PaymentSuite\StripeBundle\Router\StripeRoutesLoader
+        arguments:
+            - "%paymentsuite.stripe.controller_route%"
+        calls:
+            - [ setResolver, [ "@routing.resolver" ] ]
+        tags:
+            - { name: routing.loader }
